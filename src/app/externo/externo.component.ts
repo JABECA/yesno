@@ -8,7 +8,7 @@ import { PeticionesServiceService } from '../services/peticiones-service.service
 	providers: [ PeticionesServiceService ],
 })
 export class ExternoComponent implements OnInit {
-	public response: any = 'no';
+	public response: any = '';
 	public img = '';
 
 	constructor(private _peticionesService: PeticionesServiceService) {}
