@@ -14,7 +14,7 @@ export class ExternoComponent implements OnInit {
 	constructor(private _peticionesService: PeticionesServiceService) {}
 
 	ngOnInit() {
-		this._peticionesService.getUser().subscribe(
+		this._peticionesService.getData().subscribe(
 			(result) => {
 				this.response = result.answer;
 				this.img = result.image;
